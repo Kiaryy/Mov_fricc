@@ -1,4 +1,3 @@
-//prueba actualizacion
 void setup(){
   size(200,200);  
   rectMode(CENTER);
@@ -6,8 +5,8 @@ void setup(){
 
 float  posx = width/2;
 float velx;
-float vely;
-boolean air;
+float y = 121.899994;
+
 
 void draw(){
   //escenario
@@ -17,14 +16,15 @@ void draw(){
   
   //coso
   strokeWeight(1);
-  rect(posx,height*0.666-width*0.063/2-5,width*0.063,width*0.063);
+  rect(posx,y,width*0.063,width*0.063);
   
   //control
   mov_l();
   mov_r();
+  salt();
   posx += velx;
   velx *= 0.9;
-  
+  println(height*0.666-width*0.063/2-5);
   //limites
   if(posx<=-26){
     posx = width+width*0.063/2;

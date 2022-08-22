@@ -13,3 +13,13 @@ void mov_r(){
       }  
      }
 }
+
+void salt(){
+   if(y <= 121.899994) {y = y +3;} else {}
+  if(keyPressed){  
+   if(key == 'w' || key== 'W'){
+       y -=5;  
+     
+      }  
+     }
+}
