@@ -4,7 +4,7 @@ boolean[] keys;
 void setup(){
   size(200,200);  
   rectMode(CENTER);
-  keys=new boolean[2];
+  keys=new boolean[3];
       keys[0]=false;
       keys[1]=false;
 }
@@ -26,7 +26,7 @@ void draw(){
   rect(posx,posy,width*0.063,width*0.063);
   
   //control
-
+  contr();
   posx += velx;
   posy += vely;
   velx *= 0.9;
