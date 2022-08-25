@@ -1,8 +1,9 @@
 //so
 
 boolean[] keys;
+boolean jump = false;
 void setup(){
-  size(200,200);  
+  size(600,600);  
   rectMode(CENTER);
   keys=new boolean[3];
       keys[0]=false;
@@ -12,7 +13,7 @@ void setup(){
 float  posx = width/2;
 float velx;
 float vely;
-float posy = 121.899994;
+float posy = 399.6;
 
 
 void draw(){
@@ -30,9 +31,15 @@ void draw(){
   posx += velx;
   posy += vely;
   velx *= 0.9;
-  vely *= 0.9;
-  
-  
+  vely += 1.5;
+   if (posy > 399.6 - width*0.063/2) {
+
+    jump = false;
+    posy = 399.6 - width*0.063/2;
+    vely = 0;
+
+  }
+  println(height*0.666);
   
   //limites
   if(posy <=121){

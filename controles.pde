@@ -28,7 +28,8 @@ void contr(){
       {
         velx +=0.5;
       }
-      if(keys[2]){
-        vely -=0.5;
+      if(keys[2] && jump == false){
+        vely -=20;
+        jump = true;
       }
 }
