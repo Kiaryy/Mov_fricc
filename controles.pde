@@ -2,20 +2,20 @@
 
     void keyPressed()
     {
-      if (key=='a')
+      if (key=='a'||key=='A'||keyCode==37)
         keys[0]=true;
-      if (key=='d')
+      if (key=='d'||key=='D'||keyCode==39)
         keys[1]=true;
-      if (key == 'w')
+      if (key == 'w'||key=='W'||keyCode==38)
         keys[2]=true;
     }
     void keyReleased()
     {
-      if (key=='a')
+      if (key=='a'||key=='A'||keyCode==37)
          keys[0]=false;
-      if (key=='d')
+      if (key=='d'||key=='D'||keyCode==39)
          keys[1]=false;
-      if (key == 'w')
+      if (key == 'w'||key=='W'||keyCode==38)
         keys[2]=false;
    } 
    
